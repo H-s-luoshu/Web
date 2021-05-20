@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>collection</title>
+		<style type="text/css">
+			body{
+				background-image: url(../img/14.jpg);
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			* {
+				padding:0;
+				margin:0;
+			}
+			.menu {
+				width:350px;
+				height:auto;
+				margin:100px auto;
+			}
+			.item {
+				width:100%;
+				height:auto;
+			}
+			.item > h3 {
+				height:40px;
+				line-height:40px;
+				background-color: cornflowerblue;
+				color: #DCDCDC;
+				border-bottom:2px solid #ccc;
+				padding-left:10px;
+			}
+			.item > .itembox {
+				width:100%;
+				height:0px;
+				overflow:hidden;
+				/*display:none;
+				*/
+			            /*添加过渡效果:过渡效果只能产生从某个值到另外一个具体的值的过渡*/
+			            /*1.一定要设置为哪些css样式添加过渡效果*/
+			            /*transition-property:display;
+				*/
+			            transition-property:height;
+				/*2.一定要设置过渡效果的耗时*/
+			            transition-duration:1s;
+			}
+			.item > .itembox > ul {
+				list-style:none;
+				background-color: lavender;
+				padding:10px;
+			}
+			/*为item添加hover伪类*/
+			        .item:hover > .itembox {
+				/*display:block;
+				*/
+			            height:110px;
+			}
+			a{color: blueviolet;}
+			 a:hover{color:#F00}/*鼠标经过悬停字体颜色*/
+			 h1{
+				 color: #E6E6FA;
+				 text-align: center;
+				 font-family: 'Brush Script MT', cursive;
+				 font-size: 60px;
+			 }
+		</style>
+	</head>
+	<body>
+		<h1>My collection</h1>
+		<div class="menu">
+		    <div class="item">
+		        <h3>文学</h3>
+		        <div class="itembox">
+		            <ul>
+		                <li><a href="https://book.douban.com/subject/1007433/">《红与黑》</a></p></li>
+		                <li><a href="https://book.douban.com/subject/4898521/">《呼啸山庄》</a></p></li>
+		                <li><a href="https://book.douban.com/subject/27608412/">《默读》</a></p></li>
+		                <li><a href="https://book.douban.com/subject/34467283/">《破云》</a></p></li>
+		            </ul>
+		        </div>
+		    </div>
+		    <div class="item">
+		        <h3>学习</h3>
+		        <div class="itembox">
+		            <ul>
+		                <li><a href="http://csdn.net">CSDN</a></p></li>
+		                <li><a href="http://educoder.net">Educoder</a></p></li>
+		                <li><a href="https://github.com/">Github</a></p></li>
+		                <li><a href="https://leetcode-cn.com/">Leetcode</a></p></li>
+		            </ul>
+		        </div>
+		    </div>
+		    <div class="item">
+		        <h3>音乐</h3>
+		        <div class="itembox">
+		            <ul>
+		                <li><a href="http://y.qq.com/n/yqq/song/002aqwkw3bPm7t.html">拓雨逢春</a></p></li>
+		                <li><a href="https://y.qq.com/n/yqq/song/000K74Op0OV8Cm.html">演员</a></p></li>
+		                <li><a href="https://y.qq.com/n/yqq/song/001mhTL141HU8K.html">长生诀</a></p></li>
+		                <li><a href="https://y.qq.com/n/yqq/song/002kOvBZ3eQChP.html">天问</a></p></li>
+		            </ul>
+		        </div>
+		    </div>
+		    <div class="item">
+		        <h3>实用</h3>
+		        <div class="itembox">
+		            <ul>
+		                <li><a href="https://www.processon.com/diagrams/new#template">processon</a></p></li>
+		                <li><a href="https://www.wenshushu.cn/">文叔叔</a></p></li>
+		                <li><a href="http://kongfz.com">孔夫子旧书网</a></p></li>
+		                <li><a href="http://1ppt.com">第一PPT</a></p></li>
+		            </ul>
+		        </div>
+		    </div>
+		</div>
+	</body>
+</html>
